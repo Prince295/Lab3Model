@@ -10,5 +10,8 @@ class Generator():
         f1 = np.random.random()
         self.z = self.e ^ f1 - 1
         return self.z
-
-    
+    def array_of_func(self,n):
+        for i in range(n):
+            self.array.append(self.recursive_function(self))
+        self.array.sort()
+        return self.array
