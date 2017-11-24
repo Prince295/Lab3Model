@@ -1,6 +1,7 @@
 import unittest
-import Generator
 
+from Gener import *
+from MathO import *
 
 class GeneratorTest(unittest.TestCase):
    """Generator tests"""
@@ -26,25 +27,16 @@ class GeneratorTest(unittest.TestCase):
        print("Tear down for [" + self.shortDescription() + "]")
        print("")
 
-   def test_add(self):
+   def test_cut(self):
        """Add operation test"""
        print("id: " + self.id())
-       self.assertEqual(Generator.add(1, 2), 3)
+       self.assertEqual( Gen.cut( 0.8, 1.2 ), 4, 7 )
 
-   def test_sub(self):
-       """Sub operation test"""
+   def test_expected_value(self):
        print("id: " + self.id())
-       self.assertEqual(Generator.sub(4, 2), 2)
+       self.assertEqual( Math1.expected_value(), )
 
-   def test_mul(self):
-       """Mul operation test"""
-       print("id: " + self.id())
-       self.assertEqual(Generator.mul(2, 5), 10)
 
-   def test_div(self):
-       """Div operation test"""
-       print("id: " + self.id())
-       self.assertEqual(Generator.div(8, 4), 2)
 
 
 if __name__ == '__main__':
