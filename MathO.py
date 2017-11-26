@@ -27,7 +27,7 @@ class Math1(object):
         num.append((xone,xtwo))
         n1.append(xtwo-xone)
         p.append( n1[j] / n )
-
+    otr.pop(otr[0])
 
 
     def pint(self):
