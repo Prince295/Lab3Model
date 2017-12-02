@@ -4,8 +4,11 @@ from Gener import *
 
 class Math1(object):
 
-    n = 500
-    m = 30
+    n = int(input("ВВедите n "))
+    m = int(n/17)
+
+    if n>=500:
+        m=30
     P=0.01
     deltax = (np.exp(1) - 1) / m
     x = Gen.array_of_func(Gen,n)
